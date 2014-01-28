@@ -1,9 +1,17 @@
 Beer::Application.routes.draw do
+  #catch all route
+  resources :cervezas
+
+  #add another view routing to a controller. 
+  # get 'controller_name' => 'controllername#index'
+  get 'breweries/' => 'breweries#index'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'cervezas#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

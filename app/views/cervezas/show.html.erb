@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cerveza.name %>
+</p>
+
+<p>
+  <strong>Brewer:</strong>
+  <%= @cerveza.brewer %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @cerveza.type %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @cerveza.price %>
+</p>
+
+<p>
+  <strong>Brewery:</strong>
+  <%= @cerveza.brewery %>
+</p>
+
+<p>
+  <strong>Abv:</strong>
+  <%= @cerveza.ABV %>
+</p>
+
+<%= link_to 'Edit', edit_cerveza_path(@cerveza) %> |
+<%= link_to 'Back', cervezas_path %>
